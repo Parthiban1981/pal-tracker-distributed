@@ -2,10 +2,10 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: backlog-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+  - route: backlog-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   services:
   - tracker-backlog-database

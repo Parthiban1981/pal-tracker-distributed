@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+  - route: allocations-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   services:
   - tracker-allocations-database

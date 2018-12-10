@@ -2,10 +2,10 @@ applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
   routes:
-  - route: timesheets-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+  - route: timesheets-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.api.sys.pcf.paltraining.perficient.com
+    REGISTRATION_SERVER_ENDPOINT: registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   services:
   - tracker-timesheets-database
