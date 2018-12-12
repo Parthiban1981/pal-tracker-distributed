@@ -5,7 +5,9 @@ applications:
   - route: timesheets-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
+  #env:
+    #REGISTRATION_SERVER_ENDPOINT: http://registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   services:
-  - tracker-timesheets-database
+    - tracker-timesheets-database
+    - tracker-service-registry
+    - tracker-circuit-breaker-dashboard

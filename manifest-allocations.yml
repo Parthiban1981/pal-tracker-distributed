@@ -5,7 +5,9 @@ applications:
   - route: allocations-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
+  #env:
+    #REGISTRATION_SERVER_ENDPOINT: http://registration-pal-parthiban1981.apps.pcf.paltraining.perficient.com
   services:
-  - tracker-allocations-database
+    - tracker-allocations-database
+    - tracker-service-registry
+    - tracker-circuit-breaker-dashboard
